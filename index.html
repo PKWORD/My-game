@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<button id="1">_</button>
+<button id="2">_</button>
+<button id="3">_</button><br>
+
+<button id="4">_</button>
+<button id="5">_</button>
+<button id="6">_</button><br>
+
+<button id="7">_</button>
+<button id="8">_</button>
+<button id="9">_</button><br>
+
+<button id="resetbtn">Reset</button>
+
+
+
+<script>//Defining a random number generator
+let bot;
+
+
+//adding buttons
+function addbtns() {
+    document.getElementById("1").onclick = function () {
+        if (document.getElementById('1').innerText == 'O' || document.getElementById('1').innerText == 'X') {
+        } else {
+            document.getElementById("1").innerText = 'X'
+            brain()
+            winlose()
+        }
+    }
+
+
+    document.getElementById("2").onclick = function () {
+        if (document.getElementById('2').innerText == 'O' || document.getElementById('2').innerText == 'X') {
+        } else {
+            document.getElementById("2").innerText = 'X'
+            brain()
+            winlose()
+        }
+    }
+
+    document.getElementById("3").onclick = function () {
+        if (document.getElementById('3').innerText == 'O' || document.getElementById('3').innerText == 'X') {
+        } else {
+            document.getElementById("3").innerText = 'X'
+            brain()
+            winlose()
+        }
+
+    }
+
+    document.getElementById("4").onclick = function () {
+        if (document.getElementById('4').innerText == 'O' || document.getElementById('4').innerText == 'X') {
+        } else {
+            document.getElementById("4").innerText = 'X'
+            brain()
+            winlose()
+
+        }}
+
+    document.getElementById("5").onclick = function () {
+        if (document.getElementById('5').innerText == 'O' || document.getElementById('5').innerText == 'X') {
+        } else {
+            document.getElementById("5").innerText = 'X'
+            brain()
+            winlose()
+
+        }}
+
+    document.getElementById("6").onclick = function () {
+        if (document.getElementById('6').innerText == 'O' || document.getElementById('6').innerText == 'X') {
+        } else {
+            document.getElementById("6").innerText = 'X'
+            brain()
+            winlose()
+
+        }}
+
+    document.getElementById("7").onclick = function () {
+        if (document.getElementById('7').innerText == 'O' || document.getElementById('7').innerText == 'X') {
+        } else {
+            document.getElementById("7").innerText = 'X'
+            brain()
+            winlose()
+
+        }}
+
+    document.getElementById("8").onclick = function () {
+        if (document.getElementById('8').innerText == 'O' || document.getElementById('8').innerText == 'X') {
+        } else {
+            document.getElementById("8").innerText = 'X'
+            brain()
+            winlose()
+
+        }}
+
+    document.getElementById("9").onclick = function () {
+        if (document.getElementById('9').innerText == 'O' || document.getElementById('9').innerText == 'X') {
+        } else {
+            document.getElementById("9").innerText = 'X'
+            brain()
+            winlose()
+
+        }}
+}
+addbtns()
+
+
+
+
+
+// bot brain
+function brain(){
+    bot = Math.round(Math.random() * 8 + 1)
+
+    if (bot == 1 && document.getElementById('1').innerText == '_'){
+        document.getElementById('1').innerText = 'O'
+    }
+    else if (bot == 2 && document.getElementById('2').innerText == '_'){
+        document.getElementById('2').innerText = 'O'
+    }
+    else if (bot == 3 && document.getElementById('3').innerText == '_'){
+        document.getElementById('3').innerText = 'O'
+    }
+    else if (bot == 4 && document.getElementById('4').innerText == '_'){
+        document.getElementById('4').innerText = 'O'
+    }
+    else if (bot == 5 && document.getElementById('5').innerText == '_'){
+        document.getElementById('5').innerText = 'O'
+    }
+    else if (bot == 6 && document.getElementById('6').innerText == '_'){
+        document.getElementById('6').innerText = 'O'
+    }
+    else if (bot == 7 && document.getElementById('7').innerText == '_'){
+        document.getElementById('7').innerText = 'O'
+    }
+    else if (bot == 8 && document.getElementById('8').innerText == '_'){
+        document.getElementById('8').innerText = 'O'
+    }
+    else if (bot == 9 && document.getElementById('9').innerText == '_'){
+        document.getElementById('9').innerText = 'O'
+    }
+
+    //X's problem solving
+    else if (bot == 1 && document.getElementById('1').innerText == 'X'){
+        brain()
+    }
+    else if (bot == 2 && document.getElementById('2').innerText == 'X'){
+        brain()
+    }
+    else if (bot == 3 && document.getElementById('3').innerText == 'X'){
+        brain()
+    }
+    else if (bot == 4 && document.getElementById('4').innerText == 'X'){
+        brain()
+    }
+    else if (bot == 5 && document.getElementById('5').innerText == 'X'){
+        brain()
+    }
+    else if (bot == 6 && document.getElementById('6').innerText == 'X'){
+        brain()
+    }
+    else if (bot == 7 && document.getElementById('7').innerText == 'X'){
+        brain()
+    }
+    else if (bot == 8 && document.getElementById('8').innerText == 'X'){
+        brain()
+    }
+    else if (bot == 9 && document.getElementById('9').innerText == 'X'){
+        brain()
+    }
+
+    //O's problem solving
+    else if (bot == 1 && document.getElementById('1').innerText == 'O'){
+        brain()
+    }
+    else if (bot == 2 && document.getElementById('2').innerText == 'O'){
+        brain()
+    }
+    else if (bot == 3 && document.getElementById('3').innerText == 'O'){
+        brain()
+    }
+    else if (bot == 4 && document.getElementById('4').innerText == 'O'){
+        brain()
+    }
+    else if (bot == 5 && document.getElementById('5').innerText == 'O'){
+        brain()
+    }
+    else if (bot == 6 && document.getElementById('6').innerText == 'O'){
+        brain()
+    }
+    else if (bot == 7 && document.getElementById('7').innerText == 'O'){
+        brain()
+    }
+    else if (bot == 8 && document.getElementById('8').innerText == 'O'){
+        brain()
+    }
+    else if (bot == 9 && document.getElementById('9').innerText == 'O'){
+        brain()
+    }
+
+
+}
+
+
+
+
+
+//win/lose alert
+function winlose() {
+    //check Win
+    if (document.getElementById('1').innerText == 'X' && document.getElementById("2").innerText == 'X' && document.getElementById('3').innerText == "X"){
+        window.alert('You won')
+    }
+    else if (document.getElementById('4').innerText == 'X' && document.getElementById("5").innerText == 'X' && document.getElementById('6').innerText == "X"){
+        window.alert('You won')}
+
+    else if (document.getElementById('7').innerText == 'X' && document.getElementById("8").innerText == 'X' && document.getElementById('9').innerText == "X"){
+        window.alert('You won') }
+
+    else if (document.getElementById('1').innerText == 'X' && document.getElementById("4").innerText == 'X' && document.getElementById('7').innerText == "X"){
+        window.alert('You won') }
+
+    else if (document.getElementById('2').innerText == 'X' && document.getElementById("5").innerText == 'X' && document.getElementById('8').innerText == "X"){
+        window.alert('You won') }
+
+    else if (document.getElementById('3').innerText == 'X' && document.getElementById("6").innerText == 'X' && document.getElementById('9').innerText == "X"){
+        window.alert('You won') }
+
+    else if (document.getElementById('1').innerText == 'X' && document.getElementById("5").innerText == 'X' && document.getElementById('9').innerText == "X"){
+        window.alert('You won') }
+
+    else if (document.getElementById('3').innerText == 'X' && document.getElementById("5").innerText == 'X' && document.getElementById('7').innerText == "X"){
+        window.alert('You Won') }
+
+    //Check lose
+    if (document.getElementById('1').innerText == 'O' && document.getElementById("2").innerText == 'O' && document.getElementById('3').innerText == "O"){
+        window.alert('You Lost')
+    }
+    else if (document.getElementById('4').innerText == 'O' && document.getElementById("5").innerText == 'O' && document.getElementById('6').innerText == "O"){
+        window.alert('You Lost')
+    }
+    else if (document.getElementById('7').innerText == 'O' && document.getElementById("8").innerText == 'O' && document.getElementById('9').innerText == "O"){
+        window.alert('You Lost')
+    }
+    else if (document.getElementById('1').innerText == 'O' && document.getElementById("4").innerText == 'O' && document.getElementById('7').innerText == "O"){
+        window.alert('You Lost')
+    }
+    else if (document.getElementById('2').innerText == 'O' && document.getElementById("5").innerText == 'O' && document.getElementById('8').innerText == "O"){
+        window.alert('You Lost')
+    }
+    else if (document.getElementById('3').innerText == 'O' && document.getElementById("6").innerText == 'O' && document.getElementById('9').innerText == "O"){
+        window.alert('You Lost')
+    }
+    else if (document.getElementById('1').innerText == 'O' && document.getElementById("5").innerText == 'O' && document.getElementById('9').innerText == "O"){
+        window.alert('You Lost')
+    }
+    else if (document.getElementById('3').innerText == 'O' && document.getElementById("5").innerText == 'O' && document.getElementById('7').innerText == "O"){
+        window.alert('You Lost')
+    }
+    else if(document.getElementById('1').innerText != '_' && document.getElementById('2').innerText != '_' && document.getElementById('3').innerText != '_' && document.getElementById('4').innerText != '_' && document.getElementById('5').innerText != '_' && document.getElementById('6').innerText != '_' && document.getElementById('7').innerText != '_' && document.getElementById('8').innerText != '_' && document.getElementById('9').innerText != '_'){
+        window.alert('Its a draw')
+    }}
+
+
+
+
+
+//reset button
+document.getElementById('resetbtn').onclick = function () {
+    document.getElementById("1").innerText = '_'
+
+    document.getElementById("2").innerText = '_'
+
+    document.getElementById("3").innerText = '_'
+
+    document.getElementById("4").innerText = '_'
+
+    document.getElementById("5").innerText = '_'
+
+    document.getElementById("6").innerText = '_'
+
+    document.getElementById("7").innerText = '_'
+
+    document.getElementById("8").innerText = '_'
+
+    document.getElementById("9").innerText = '_'
+
+    console.clear()
+}
+</script>
+
+
+</body>
+</html>
